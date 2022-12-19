@@ -52,30 +52,173 @@ color: #293356;
     position: absolute;
     left: 630px;
     top:38px;
+    
 }
-.signals {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    top:50px;
-}
+
 .middlecontainer {
     position: absolute;
-    width:500px;
-    height:340px;
+    display: flex;
+    width:550px;
+    height:360px;
     left:430px;
-    top:250px;
+    top:220px;
 background: #FFFFFF;
 box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
 border-radius: 8px;
 }
-.nav  p {
+.nav   {
 position: absolute;
 display: flex;
 justify-content: space-between;
 flex-direction: row;
+width: 480px;
+height: 60px;
+left: 10px;
 
 }
+.nav p {
+position:absolute;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 2px;
+text-transform: uppercase;
+left: 20px;
+top:20px;
+color: #848EAD;
+}
+.month p {
+position: absolute;
+display: flex;
+left: 260px;
+color: #293356;
+font-size: 40px;
+top: -2px;
+font: bold;
+
+}
+.month span {
+    position: absolute;
+    display: flex;
+    left: 400px;
+    top: 35px;
+    color: #848EAD;
+}
+.signals {
+position: absolute;
+display: flex;
+top: 80px;
+width: 500px;
+height: 50px;
+left: 30px;
+
+} 
+.rectangle1 {
+position: absolute;
+display: flex;
+width: 218px;
+height: 8px; 
+background: #A4F3EB;
+border-radius: 5px;
+top:20px;
+left: 13px;
+}
+.rectangle2 {
+    position: absolute;
+    display: flex;
+    width: 218px;
+    height: 8px; 
+    background: #ECF0FB;
+    border-radius: 5px;
+    left: 273px;
+   
+    top:20px;
+    left: 260.5px;
+}
+.circle  {
+    position: absolute;
+    display: flex;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px none;
+/* color: aqua; */
+left: 230px;
+top: 7px;
+background: #10D8C4;
+box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+
+}
+.circle img {
+    position: absolute;
+    display: flex;
+    width: 28px;
+    top:5px ;
+}
+.nav1 {
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 20px;
+    /* background: #10D8C4; */
+    top:150px;
+    
+}
+.bill {
+    position: absolute;
+    display: flex;
+    font-size: 14px;
+line-height: 16px;
+color: #848EAD;
+text-transform:capitalize;
+left: 100px;
+}
+.buttons1 button {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 30px;
+background: #CFD8EF;
+border-radius: 15px;
+left: 200px;
+border: 1px  none;
+}
+.yearbill  p {
+    position: absolute;
+    display: flex;
+    left: 280px;
+    top: -15px;
+    color: #848EAD;
+    font-size: 12 px;
+    text-transform: capitalize;
+    left: 290px;
+}
+.buttons2  button {
+position: absolute;
+display: flex;
+background: #FEEDE8;
+border-radius: 15px;
+left: 400px;
+width: 100px;
+height:28px;
+border: 1px none;
+color: 
+#FF8D68;
+align-items: center;
+}
+.oval {
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px none;
+    background: #FFFFFF;
+    left: 205px;
+    top: 5px;
+}
+
+
 .footer   {
     position: absolute;
     display: flex;
@@ -88,16 +231,18 @@ flex-direction: row;
 .footerline {
 position: absolute;
 display: flex;
-width:500px;
+width:550px;
 height: 2px;
 background: #ECF0FB;
+left:-1px;
+top:-10px;
 }   
 .text {
     position: absolute;
     display: flex;
     flex-direction: column;
-    left:30px;
-    top: 5px;
+    left:35px;
+    top: 20px;
     color:#848EAD;
 }
 .text p {
@@ -107,13 +252,15 @@ line-height: 2px;
 position: absolute;
 background: #293356;
 border-radius: 20.5px;
-top:75px;
-left:385px;
-font-size: 13px;
-line-height: 18px;
+top:65px;
+left:380px;
+font-size: 12px;
+line-height: 13px;
 text-align: center;
 color: #BECDFF;
-border: 1px solid none;
+border: 1px none;
+width: 100px;
+height: 30px;
 }
 .check {
     position: absolute;
@@ -121,7 +268,7 @@ border: 1px solid none;
     display: flex;
     flex-direction: column;
     left:20px;
-    top: 5px;
+    top: 20px;
 }
 .check1 {
    position: absolute;
