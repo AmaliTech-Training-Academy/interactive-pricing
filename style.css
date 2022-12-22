@@ -4,14 +4,10 @@ body {
     scroll-behavior: smooth;
     font-family: 'Epilogue';
     overflow-x: hidden;
+    width: 100%;
+    height: 880px;
 }
-.supercontainer {
-    position: absolute;
-    display: flex;
-width:100%;
-height:780px;
-background: #F9FAFF;
-}
+
 .maincontainer {
     position: absolute;
     display: flex;
@@ -25,13 +21,10 @@ background: #F9FAFF;
 .trafficcontainer p {
     position: absolute;
     height: 38px;
-    left: 0.38%;
-    right: 0.13%;
+    left: 640px;
     top: 55px;
-    font-family: 'Manrope';
-    font-style: normal;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 38px;
     line-height: 38px;
     text-align: center;
     color: #293356;
@@ -47,13 +40,13 @@ background: #F9FAFF;
     line-height: 20px;
     text-align: center;
     color: #848EAD;
-    left: 500px;
+    left: 740px;
     top: 130px;
     
 }
 .circles img {
     position: absolute;
-    left: 630px;
+    left: 830px;
     top:38px;
     
 }
@@ -63,7 +56,7 @@ background: #F9FAFF;
     display: flex;
     width:540px;
     height:360px;
-    left:430px;
+    left:580px;
     top:220px;
     background: #FFFFFF;
     box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
@@ -91,23 +84,28 @@ background: #F9FAFF;
     top:20px;
     color: #848EAD;
 }
-.month p {
-    position: absolute;
-    display: flex;
-    left: 260px;
-    color: #293356;
-    font-size: 40px;
-    top: -2px;
-    font-weight: bold;
-
-}
 .month span {
     position: absolute;
     display: flex;
-    left: 400px;
-    top: 35px;
-    color: #848EAD;
+    color: #293356;
+    font-size: 40px;
+    top: 14px;
+    left: 260px;
+   
+  
 }
+.month p {
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    top: 15px;
+    color: #848EAD;
+    text-transform: lowercase;
+    left: 400px;
+    
+
+}
+
 .shaddowpath {
     position: absolute;
     display: flex;
@@ -219,6 +217,19 @@ background: #F9FAFF;
     color: #FF8D68;
     align-items: center;
 }
+.buttons3 button {
+        
+    position: absolute;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    width: 41px;
+    height: 12px;
+    border-radius: 10px;
+    color: #FF8D68;
+    display: none;
+        }
 .oval {
     position: absolute;
     display: flex;
@@ -238,6 +249,7 @@ width: 540px;
 height:120px;
 /* background:brown; */
 top:200px;
+
 }
 
 
@@ -256,18 +268,37 @@ top:200px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    left:35px;
-    top: 40px;
+    left:75px;
+    top: 30px;
     color:#848EAD;
 }
+
 .text p {
-    line-height: 2px;
+    position: absolute;
+    display: flex;
+    /* line-height: 2px; */
+    top:35px;
+    width: 120px;
+    height: 1px;
+}
+.text span {
+    position: absolute;
+    display: flex;
+    top: 84px;
+    width: 120px;
+    height: 1px;   
+}
+.text h6 {
+    position: absolute;
+    display: flex;
+    width: 120px;
+    height: 1px;
 }
 .lastbutton button {
     position: absolute;
     background: #293356;
     border-radius: 20.5px;
-    top:65px;
+    top:280px;
     left:380px;
     font-size: 12px;
     line-height: 13px;
@@ -281,8 +312,8 @@ top:200px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    left:20px;
-    top: 40px;
+    left:40px;
+    top: 240px;
 }
 .check1 {
     position: absolute;
@@ -302,23 +333,25 @@ top:200px;
     display: flex;
     top: 15px;  
 }
+
 @media only screen and (min-width:320px) and (max-width:375px) {
     @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
  
     body {
         scroll-behavior: smooth;
         font-family: 'Epilogue';
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        width: 375px;
+        height: 800px;
     }
-    .supercontainer {
-    width: 375px;
-    height: 700px;
-    }
+
     .maincontainer {
         position: absolute;
         width: 375px;
         height: 500px;
-        left:8px;
-        top: 0px;
+        left:1px;
+        top: -6px;
         background: #F1F5FE;
         border-radius: 0px 0px 0px 191.5px;
     }
@@ -334,20 +367,13 @@ top:200px;
         font-size: 25px;
         line-height: 38px;
         text-align: center;
-    
-    color: #293356;
+        color: #293356;
     
     
     }
     .trafficcontainer span {
         position: absolute;
-        /* height: 20px; */
-        /* left: 3.67%;
-        right: 3.42%; */
         top: 120px;
-        /* font-family: 'Manrope';
-        font-style: normal; */
-        /* font-weight: 400; */
         font-size: 18px;
         line-height: 26px;
         text-align: center;
@@ -367,31 +393,14 @@ top:200px;
         position: absolute;
         display: flex;
         width:330px;
-        height:500px;
-        left:15px;
+        height:700px;
+        left:18px;
         top:320px;
         background: #FFFFFF;
         box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
         border-radius: 8px;
     }
-    /* .nav {
-        position: absolute;
-        display: flex;
-        width: 280px;
-        height: 50px;
-        background-color: blue;
-        left: 30px;
-    } */
-    /* .nav   {
-        position: absolute;
-        display: flex;
-        justify-content: space-between; 
-         flex-direction: column;
-        width: 300px;
-        height: 60px;
-        left: 80px;
-    
-    } */
+   
     .nav p {
         position:absolute;
         font-size: 14px;
@@ -403,33 +412,17 @@ top:200px;
         color: #848EAD;
     }
 
-     .month span {
-        position: absolute;
-        display: flex;
-        left: 10px;
-        color: #293356;
-        font-size: 40px;
-        top: -2px;
-        font-weight: bold;
-    } 
+ 
 
    
    
    
-    /* .month span {
-        position: absolute;
-        display: flex;
-        left:-10px;
-        top: 35px;
-        color: #848EAD;
-    } */
     .shaddowpath {
         position: absolute;
         display: flex;
         top: 60px;
         width: 280px;
-        /* height: 50px; */
-        /* left: 30px; */
+
     
     } 
     .rectangle1 {
@@ -453,15 +446,7 @@ top:200px;
         top:20px;
         left: 150px;
     }
-    /* .month p {
-        position: absolute;
-        display: flex;
-        left: 300px;
-        color: #293356;
-        font-size: 40px;
-        top: -2px;
-        font-weight: bold;
-    } */
+    
     .month span {
         position: absolute;
         display: flex;
@@ -469,16 +454,18 @@ top:200px;
         top: 105px;
         color: #293356;
         font: bold;
-        font-weight: 20px;
+        font-weight: 50px;
+        font-size: 40px;
         
     }
     .month p {
       position: absolute;
       display: flex;
-      font-size: 14px;
+      font-size: 20px;
       color: #848EAD;
       top:105px;
       left:200px;
+      text-transform: lowercase;
     }
     .circle  {
         position: absolute;
@@ -501,44 +488,54 @@ top:200px;
     }
     .navbar {
         position:absolute;
-        display: flex;
-        justify-content: space-between;
-        width: 100px;
-        height: 20px;
-        top:150px;
-        left: -65px;
+        display: grid;
+        grid-template-columns: row;
+        width: 300px;
+        top:190px;
+        left: 5px;
         
     }
-    .bill  p {
+    .navbar  p {
         position: absolute;
         display: flex;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 13px;
         color: #848EAD;
         text-transform:capitalize;
-        left: 90px;
-        top: -5px;
+        left: 40px;
+        top: 10px;
     }
     .buttons1 button {
         position: absolute;
         display: flex;
-        width: 60px;
+        width: 50px;
         height: 30px;
         background: #CFD8EF;
         border-radius: 15px;
-        left: 200px;
+        left: 140px;
         border: 1px  none;
        
     }
-    .yearbill  p {
+    .oval {
+        position: absolute;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px none;
+        background: #FFFFFF;
+        left: 142px;
+        top: 18px;
+    }
+    .yearbill  span {
         position: absolute;
         display: flex;
         left: 280px;
-        top: -15px;
+        top: 25px;
         color: #848EAD;
         font-size: 12 px;
         text-transform: capitalize;
-        left: 290px;
+        left: 200px;
     }
     .buttons2  button {
         position: absolute;
@@ -553,86 +550,110 @@ top:200px;
         align-items: center;
         display: none;
     }
-    .oval {
-        position: absolute;
-        display: flex;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 1px none;
-        background: #FFFFFF;
-        left: 205px;
-        top: 5px;
+    .buttons3 button {      
+position: absolute;
+display: flex;
+font-weight: 800;
+font-size: 10px;
+line-height: 14px;
+text-align: center;
+width: 41px;
+height: 20px;
+border-radius: 10px;
+color: #FF8D68;
+left: 280px;
+top: 20px;
+
     }
+ 
     
-    
-    .footer   {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        width:300px;
-        height:400px;
-        top:200px;
-    
-    }
+
     .bottomline {
         position: absolute;
         display: flex;
-        width:250px;
+        width:330px;
         height: 2px;
         background: #ECF0FB;
         left:-1px;
-        top:-10px;
+        top:100px;
     }   
     .text {
         position: absolute;
         display: flex;
         flex-direction: column;
-        left:35px;
-        top: 20px;
+        left:110px;
+        top: 200px;
         color:#848EAD;
     }
+   
+     .text h6 {
+        position: absolute;
+        display: flex;
+        left: 5px;
+        top:-20px;
+        
+        width:800px;
+        height: 40px;
+        line-height: 30px;
+     }
     .text p {
-        line-height: 2px;
+position: absolute;
+display: flex;
+left: -10px;
+top:30px;
+width: 120px;
+height: 1px;
+    }
+    .text span {
+        position: absolute;
+        display: flex;
+        left:10px;
+        top:70px;
+        width: 120px; 
+        height: 1px;  
     }
     .lastbutton button {
         position: absolute;
+        
         background: #293356;
         border-radius: 20.5px;
-        top:205px;
+        top:555px;
         left:100px;
         font-size: 12px;
         line-height: 13px;
         text-align: center;
         color: #BECDFF;
         border: 1px none;
-        width: 100px;
-        height: 30px;
+        width: 150px;
+        height: 40px;
     }
     .check {
         position: absolute;
         display: flex;
         flex-direction: column;
-        left:20px;
-        top: 20px;
+        left:70px;
+        top: 270px;
     }
     .check1 {
         position: absolute;
         position: absolute;
         display: flex;
-        top: 80px;
+        top: 205px;
+        left:15px ;
     }
     .check2 {
         position: absolute;
         position: absolute;
         display: flex;
-        top: 47px;
+        top: 175px;
+        left: 5px;
     }
     .check3 {
         position: absolute;
         position: absolute;
         display: flex;
-        top: 15px;  
+        top: 150px; 
+        left: 20px; 
     }
 } 
 
