@@ -24,7 +24,8 @@ body {
    left:0px;
    right:0px ;
    margin: 0 auto;
-   left: 300px;  
+   left: 300px;
+   cursor: pointer;  
    
 }
 .trafficcontainer p {
@@ -56,6 +57,7 @@ body {
     position: absolute;
     left: 200px;
     top:38px;
+
     
 }
 
@@ -71,6 +73,7 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
     border-radius: 8px;
+    cursor: pointer;
 }
  .nav  {
     position: absolute;
@@ -122,15 +125,43 @@ body {
     justify-content: space-between;
     flex-direction: row;
     top: 80px;
-    width: 500px;
+    width: 90%;
     height: 50px;
     left: 25px;
-    /* background: violet; */
+    background-color: white;
+    align-items: center;
+   
 
 }
-/* .shaddowpath :nth-child():hover */
+.shaddowpath input[type="ramge"] {
+    width: 90%;
+}
+.myrange{
+    appearance: none;
+    height: 10px;
+    background-color: #10D8C4;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
 
-.rectangle1 {
+}
+.myrange::-webkit-slider-thumb {
+  -webkit-appearance:none;
+  width: 35px;
+  height: 35px;
+  background-image: url("/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #10D8C4;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+
+}
+
+
+/* .rectangle1 {
     position: absolute;
     display: flex;
     width: 218px;
@@ -153,20 +184,20 @@ body {
     top:20px;
     cursor: pointer;
 
-}
-.circle  {
+} */
+/* .circle  {
     position: absolute;
     display: flex;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px none;
-    left: 230px;
+    left: 5px;
     top: 7px;
     background: #10D8C4;
     box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
     cursor: pointer;
-}
+} */
 
 
 
@@ -176,6 +207,7 @@ body {
     width: 28px;
     top:5px ;
     cursor: pointer;
+    display: none;
     
 }
 .navbar {
@@ -191,6 +223,9 @@ body {
    
    
 }
+.navbar.buttons1 input:checked + .oval {
+    transform: translateX(18x);
+}
 .bill  p {
     position: absolute;
     display: flex;
@@ -202,7 +237,7 @@ body {
     width:100px
 
 }
-.buttons1 button {
+.buttons1 {
     position: absolute;
     display: flex;
     width: 60px;
@@ -211,11 +246,37 @@ body {
     border-radius: 15px;
     left: 200px;
     border: 1px  none;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
-.buttons1 button:hover {
+.buttons1:hover {
+    background:  #7AEADF;
+    }
+/* .buttons1 button {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 30px;
+    background: #CFD8EF;
+    border-radius: 15px;
+    left: 200px;
+    border: 1px  none;
+    cursor: pointer;
+} */
+/* .buttons1 button:hover {
 background:  #7AEADF;
+} */
+
+.buttons1 input [type="checkbox"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+
 }
+
+
+
 
 .yearbill  span {
     position: absolute;
@@ -254,6 +315,7 @@ background:  #7AEADF;
     color: #FF8D68;
     display: none;
         }
+
 .oval {
     position: absolute;
     display: flex;
@@ -262,9 +324,10 @@ background:  #7AEADF;
     border-radius: 50%;
     border: 1px none;
     background: #FFFFFF;
-    left: 205px;
+    left: 203px;
     top: 5px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .footercontent {
 position: absolute;
@@ -288,6 +351,7 @@ top:200px;
     background: #ECF0FB;
     left:1px;
     top:1px;
+    cursor: pointer;
 }   
 .text {
     position: absolute;
@@ -448,6 +512,7 @@ top:200px;
         left: 80px;
         top:20px;
         color: #848EAD;
+        cursor: pointer;
     }
 
  
@@ -524,6 +589,20 @@ top:200px;
         width: 28px;
         top:5px ;
     }
+    .myrange::-webkit-slider-thumb {
+        -webkit-appearance:none;
+        width: 35px;
+        height: 35px;
+        background-image: url("/images/icon-slider.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: #10D8C4;
+        border-radius: 50%;
+        box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+        cursor: pointer;
+        display: none;
+      
+      }
     .navbar {
         position:absolute;
         display: grid;
@@ -532,6 +611,10 @@ top:200px;
         top:190px;
         left: 5px;
         
+    }
+    .navbar.buttons1 input:checked + .oval {
+        transform: translateX(18x);
+        display: none;
     }
     .navbar  p {
         position: absolute;
@@ -550,7 +633,7 @@ top:200px;
         height: 30px;
         background: #CFD8EF;
         border-radius: 15px;
-        left: 140px;
+        left: 50px;
         border: 1px  none;
        
     }
@@ -601,7 +684,42 @@ border-radius: 10px;
 color: #FF8D68;
 left: 280px;
 top: 20px;
+    }
 
+    .buttons1 {
+        position: absolute;
+        display: flex;
+        width: 60px;
+        height: 30px;
+        background: #CFD8EF;
+        border-radius: 15px;
+        left: 200px;
+        border: 1px  none;
+        cursor: pointer;
+        display: none;
+    }
+    .buttons1 {
+        position: absolute;
+        display: flex;
+        width: 60px;
+        height: 30px;
+        background: #CFD8EF;
+        border-radius: 15px;
+        left: 200px;
+        border: 1px  none;
+        cursor: pointer;
+    }
+    .buttons1:hover {
+        background:  #7AEADF;
+        }
+    buttons1 input [type="checkbox"]{
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+        
+    
     }
  
     
