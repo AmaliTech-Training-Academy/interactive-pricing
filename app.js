@@ -110,6 +110,8 @@ window.addEventListener("load", (event) => {
 const range = document.querySelector(".myrange");
 const month_value = document.querySelector("#month-value");
 const month_views = document.querySelector("#month-views");
+const year_value = document.querySelector("#year-value");
+const year_views = document.querySelector("#month-views")
 const checkbox = document.querySelector(".toggle-btn");
 
 
@@ -131,6 +133,7 @@ const update_monthly_price = () => {
         if (checkbox.checked === true) {
             month_value.innerHTML = `$ ${range_value}`
             month_views.innerHTML = `${((8-(8*0.25))*12)}k PAGEVIEWS`
+            year_views.innerHTML = `${((8-(8*0.25))*12)}k PAGEVIEWS`
         } else {
         month_value.innerHTML = "$8.00"
         month_views.innerHTML = "10K PAGEVIEWS"
@@ -139,9 +142,9 @@ const update_monthly_price = () => {
 
 if (range.value == 2) {
     if (checkbox.checked == true) {
-        month_value.innerHTML = `$ ${range_value}`
+        month_value.innerHTML = "$ 108.00"
 
-        month_views.innerHTML = "108k PAGEVIEWS"
+        month_views.innerHTML = "50k PAGEVIEWS"
 
     }else {
 
@@ -152,9 +155,9 @@ if (range.value == 2) {
 
 if (range.value == 3) {
     if (checkbox.checked == true) {
-        month_value.innerHTML = `$ ${range_value}`
+        month_value.innerHTML = "$ 144.00"
 
-        month_views.innerHTML = "144k PAGEVIEWS"
+        month_views.innerHTML = "100k PAGEVIEWS"
     }
     else {
 
@@ -165,7 +168,8 @@ if (range.value == 3) {
 }
     if (range.value == 4) {
         if (checkbox.checked  == true) {
-            month_value.innerHTML = `$ 12.00`
+            month_value.innerHTML = "$ 216.00"
+            month_views.innerHTML ="500k PAGEVIEWS"
 
         }
         else {
@@ -182,6 +186,7 @@ if (range.value == 3) {
     if (range.value == 5) {
         if (checkbox.checked == true) {
             month_value.innerHTML = "$324.00"
+            month_views.innerHTML = "1M PAGEVIEWS"
 
         }
         else {
