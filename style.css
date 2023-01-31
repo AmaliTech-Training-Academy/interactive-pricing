@@ -131,13 +131,16 @@ body {
    
 
 }
-.shaddowpath input[type="ramge"] {
+/* .shaddowpath input[type="ramge"] {
     width: 90%;
-}
+} */
 .myrange{
     appearance: none;
     height: 10px;
-    background-color: #10D8C4;
+    background:linear-gradient(90deg, rgb(214,214,214) 50%, rgb(214,214,214) 50% );
+    opacity: 0.7;
+    -webkit-transition: 0.1s;
+    transition: opacity 0.1s;
     width: 90%;
     border-radius: 5px;
     outline: none;
@@ -151,18 +154,24 @@ body {
   -webkit-appearance:none;
   width: 35px;
   height: 35px;
-  background-image: url("/images/icon-slider.svg");
+  background-image: url("/interactive-pricing-component-main/images/icon-slider.svg");
   background-repeat:  no-repeat;
   background-position: 50% 50%;
-  background-color: #10D8C4;
+  background-color: #0cabc7ea;
   border-radius: 50%;
-  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  box-shadow: 0px 15px 30px rgba(0, 238, 255, 0.6);
   cursor: pointer;
   
 }
+
+/* .myrange {
+    background-color: 
+linear-gradient(to right,gray);
+
+}
 input[type="range"]::-ms-fill-upper {
     background-color: #ddd;
-  }
+  } */
 
  .rectangle1 {
     position: absolute;
@@ -207,15 +216,21 @@ input[type="range"]::-ms-fill-upper {
 
 
 
-.circle img {
+.circle img{
+    /* position: absolute; */
+    /* display:  flex;
+    width: 25px;
+    height: 22px;
+    top:5px ;
+    cursor: pointer;
+    display: none; */
     position: absolute;
     display: flex;
     width: 28px;
     top:5px ;
-    cursor: pointer;
     display: none;
-    
 }
+
 .navbar {
     position:absolute;
     display: flex;
@@ -584,32 +599,22 @@ top:200px;
    
    
     .shaddowpath {
-        position: absolute;
-        display: flex;
+
         top: 60px;
         width: 280px;
 
     
     } 
     .rectangle1 {
-        position: absolute;
-        display: flex;
+    
         width: 120px;
-        height: 8px; 
-        background: #A4F3EB;
-        border-radius: 5px;
-        top:20px;
-        left: 13px;
+    
+     
     }
     .rectangle2 {
-        position: absolute;
-        display: flex;
+
         width: 120px;
-        height: 8px; 
-        background: #ECF0FB;
-        border-radius: 5px;
-        left: -10px;
-        top:20px;
+
         left: 150px;
     }
     
@@ -638,7 +643,7 @@ top:200px;
       text-transform: lowercase;
       font-weight: 950px;
     }
-    .circle  {
+    /* .circle  {
         position: absolute;
         display: flex;
         width: 30px;
@@ -661,7 +666,7 @@ top:200px;
   
       .shaddowpath input {
         display:none ;
-      }
+      } */
     .navbar {
         position:absolute;
         display: grid;
@@ -684,7 +689,7 @@ top:200px;
         top: 10px;
     }
   
-    .oval {
+    /* .oval {
         position: absolute;
         display: flex;
         width: 20px;
@@ -695,7 +700,7 @@ top:200px;
         left: 150px;
         
         top: 20px;
-    }
+    } */
     .yearbill  span {
         position: absolute;
         display: flex;
@@ -734,22 +739,31 @@ left: 280px;
 top: 20px;
     }
 
-    .buttons1 {
+    /* .buttons1 {
         position: absolute;
         display: flex;
         width: 50px;
         height: 25px;
-        background: #CFD8EF;
+        background: #073fce;
         border-radius: 15px;
         left: 145px;
         border: 1px  none;
         cursor: pointer;
         top: 18px;
        
-    }
- 
+    } */
+  
+    .toggle-btn[type="checkbox"] {
     
-.toggle-btn[type="checkbox"] {
+
+ 
+        top:5px;
+        left: 135px;
+   
+      }
+
+      
+/* .toggle-btn[type="checkbox"] {
     
     position: relative;
     width: 60px;
@@ -792,7 +806,7 @@ top: 20px;
     background:  #7AEADF;
     display: none;
 
-  }
+  } */
  
     
 

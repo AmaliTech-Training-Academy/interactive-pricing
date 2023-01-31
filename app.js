@@ -101,6 +101,15 @@
 //      }
 //     }
 //  }
+// var myrange= document.getElementById("progress");
+// var output = document.getElementById("value");
+// myrange.addEventListener("mousemove", function(){
+//     var x = myrange.value;
+//     var color ='linear-gradient(90deg, rgb(164,243,235)' + x + '%, rgb(214,214,214)'+ x +'%)';
+//     console.log(x)
+//     myrange.style.background = color;
+
+// })
 
 
 window.addEventListener("load", (event) => {
@@ -122,12 +131,28 @@ range.addEventListener('input', () => {
     update_monthly_price()
 })
 
+var myrange= document.getElementById("progress");
 
 const update_monthly_price = () => {
     let range_value = parseFloat(range.value).toFixed(2)
+    let z = 0;
+    if(range_value > 4){
+
+        z = 20
+    }else if (range_value >= 3){
+
+        z = 18
+    }else if(range_value > 1){
+
+        z = 15
+    }
+
+    let x = range_value * z
 
 
-
+    var color ='linear-gradient(90deg, rgb(164,243,235) '+ x +"%" +  ', rgb(214,214,214) '+ x +  '%)';
+  
+    myrange.style.background = color;
 
     if (range.value == 1) {
         if (checkbox.checked === true) {
@@ -195,6 +220,7 @@ if (range.value == 3) {
             month_views.innerHTML = "1M PAGEVIEWS"
         }
     }
+
 
 
 
