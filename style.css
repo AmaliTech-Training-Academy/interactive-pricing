@@ -154,7 +154,7 @@ body {
   -webkit-appearance:none;
   width: 35px;
   height: 35px;
-  background-image: url("/interactive-pricing-component-main/images/icon-slider.svg");
+  background-image: url(./images/icon-slider.svg);
   background-repeat:  no-repeat;
   background-position: 50% 50%;
   background-color: #0cabc7ea;
@@ -401,7 +401,7 @@ input[type="range"]::-ms-fill-upper {
 position: absolute;
 display: flex;
 flex-direction: column;
-width: 540px;
+/* width: 540px; */
 height:120px;
 
 top:200px;
@@ -834,7 +834,7 @@ top: 20px;
         left: 5px;
         top:10px;
         
-        width:800px;
+        /* width:800px; */
         height: 40px;
         line-height: 30px;
      }
