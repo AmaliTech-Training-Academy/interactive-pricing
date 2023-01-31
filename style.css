@@ -131,9 +131,7 @@ body {
    
 
 }
-/* .shaddowpath input[type="ramge"] {
-    width: 90%;
-} */
+
 .myrange{
     appearance: none;
     height: 10px;
@@ -164,14 +162,7 @@ body {
   
 }
 
-/* .myrange {
-    background-color: 
-linear-gradient(to right,gray);
 
-}
-input[type="range"]::-ms-fill-upper {
-    background-color: #ddd;
-  } */
 
  .rectangle1 {
     position: absolute;
@@ -217,13 +208,7 @@ input[type="range"]::-ms-fill-upper {
 
 
 .circle img{
-    /* position: absolute; */
-    /* display:  flex;
-    width: 25px;
-    height: 22px;
-    top:5px ;
-    cursor: pointer;
-    display: none; */
+
     position: absolute;
     display: flex;
     width: 28px;
@@ -643,30 +628,7 @@ top:200px;
       text-transform: lowercase;
       font-weight: 950px;
     }
-    /* .circle  {
-        position: absolute;
-        display: flex;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px none;
-        left: 130px;
-        top: 7px;
-        background: #10D8C4;
-        box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
-    
-    }
-    .circle img {
-        position: absolute;
-        display: flex;
-        width: 28px;
-        top:5px ;
-
-    }
-  
-      .shaddowpath input {
-        display:none ;
-      } */
+ 
     .navbar {
         position:absolute;
         display: grid;
@@ -689,18 +651,7 @@ top:200px;
         top: 10px;
     }
   
-    /* .oval {
-        position: absolute;
-        display: flex;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 1px none;
-        background:white;
-        left: 150px;
-        
-        top: 20px;
-    } */
+    
     .yearbill  span {
         position: absolute;
         display: flex;
@@ -739,19 +690,7 @@ left: 280px;
 top: 20px;
     }
 
-    /* .buttons1 {
-        position: absolute;
-        display: flex;
-        width: 50px;
-        height: 25px;
-        background: #073fce;
-        border-radius: 15px;
-        left: 145px;
-        border: 1px  none;
-        cursor: pointer;
-        top: 18px;
-       
-    } */
+ 
   
     .toggle-btn[type="checkbox"] {
     
@@ -763,50 +702,7 @@ top: 20px;
       }
 
       
-/* .toggle-btn[type="checkbox"] {
-    
-    position: relative;
-    width: 60px;
-    height: 30px;
-    -webkit-appearance: none;
-    appearance: none;
-    background: #CFD8EF;
-    top:-5px;
-    left: 40px;
-    outline: none;
-    border-radius: 2rem;
-    cursor: pointer;
-    display: none;
-   
-  }
 
-  
-  .toggle-btn[type="checkbox"]::before {
-    content: "";
-    
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: 5px;
-    left: 2px;
-    transition: 0.5s;
-    display: none;
-  }
-  
-  .toggle-btn[type="checkbox"]:checked::before {
-    transform: translateX(190%);
-    
-    background: #fff;
-    display: none;
-  }
-  
-  .toggle-btn[type="checkbox"]:checked {
-    background:  #7AEADF;
-    display: none;
-
-  } */
  
     
 
